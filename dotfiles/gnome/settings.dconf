@@ -1,0 +1,205 @@
+[apps/update-manager]
+first-run=false
+launch-count=1
+launch-time=int64 1770220190
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1770217093
+
+[org/gnome/Ptyxis]
+default-profile-uuid='20fad22206274e0982abd26d696a8610'
+profile-uuids=['20fad22206274e0982abd26d696a8610']
+window-size=(uint32 80, uint32 24)
+
+[org/gnome/Ptyxis/Profiles/20fad22206274e0982abd26d696a8610]
+palette='xterm'
+
+[org/gnome/Totem]
+active-plugins=['movie-properties', 'variable-rate', 'rotation', 'screenshot', 'recent', 'open-directory', 'skipto', 'mpris', 'save-file', 'autoload-subtitles', 'screensaver']
+subtitle-encoding='UTF-8'
+
+[org/gnome/control-center]
+last-panel='bluetooth'
+window-state=(980, 640, false)
+
+[org/gnome/deja-dup]
+backend='google'
+periodic-timestamp='2026-01-17T00:08:48.586185+05:30'
+prompt-check='2026-01-17T00:10:49.316396+05:30'
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=true
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+
+[org/gnome/desktop/a11y/keyboard]
+enable=false
+
+[org/gnome/desktop/app-folders]
+folder-children=['System', 'Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/System]
+apps=['nm-connection-editor.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'im-config.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Sysprof.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.tweaks.desktop']
+name='X-GNOME-Shell-System.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['org.gnome.Papers.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Loupe.desktop']
+name='X-GNOME-Shell-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+accent-color='blue'
+color-scheme='prefer-dark'
+cursor-theme='bibata-modern-ice'
+gtk-theme='Flat-Remix-GTK-Blue-Darkest'
+icon-theme='Papirus'
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['update-manager', 'zen', 'gnome-power-panel', 'obsidian', 'intellij-idea-community-intellij-idea-community', 'google-chrome', 'com-mattjakeman-extensionmanager']
+
+[org/gnome/desktop/notifications/application/com-mattjakeman-extensionmanager]
+application-id='com.mattjakeman.ExtensionManager.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/intellij-idea-community-intellij-idea-community]
+application-id='intellij-idea-community_intellij-idea-community.desktop'
+
+[org/gnome/desktop/notifications/application/obsidian]
+application-id='obsidian.desktop'
+
+[org/gnome/desktop/notifications/application/update-manager]
+application-id='update-manager.desktop'
+
+[org/gnome/desktop/notifications/application/zen]
+application-id='zen.desktop'
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Control>q']
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+
+[org/gnome/portal/filechooser/org.chromium.Chromium]
+last-folder-path='/home/nmn/temp/kepano-obsidian'
+
+[org/gnome/portal/filechooser/snap.codium]
+last-folder-path='/home/nmn/git/desktop-init'
+
+[org/gnome/settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+terminal=@as []
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>e'
+command='nautilus'
+name='explorer'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>t'
+command='terminator'
+name='term'
+
+[org/gnome/shell]
+disabled-extensions=['ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com']
+enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'compiz-windows-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'terminator.desktop', 'zen.desktop']
+last-selected-power-profile='power-saver'
+welcome-dialog-last-shown-version='49.0'
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/com/github/hermes83/compiz-windows-effect]
+last-version=29
+preset='R'
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=true
+background-opacity=0.80000000000000004
+dash-max-icon-size=48
+disable-overview-on-startup=true
+dock-fixed=false
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+require-pressure-to-show=false
+show-mounts-network=true
+show-mounts-only-mounted=false
+show-show-apps-button=false
+
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+
+[org/gnome/shell/extensions/tiling-assistant]
+focus-hint-color='rgb(203,67,20)'
+last-version-installed=53
+
+[org/gnome/shell/extensions/user-theme]
+name='Orchis-Dark'
+
+[org/gnome/shell/keybindings]
+show-screenshot-ui=['<Shift><Super>s']
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=true
+sort-directories-first=true
