@@ -7,8 +7,12 @@ command -v gnome-extensions
 ```
 
 ## Restoring on a New Machine
+1. install tesseract-ocr package
+```sh
+sudo apt install tesseract-ocr
+```
 
-1. Just run these
+2. Just run these
 ```shell
 git clone https://github.com/ndev-hoster/desktop-init.git
 cd desktop-init
