@@ -59,6 +59,11 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[org/gnome/desktop/background]
+picture-options='zoom'
+picture-uri='file:///home/nmn/.config/background'
+picture-uri-dark='file:///home/nmn/.config/background'
+
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'us')]
 xkb-options=@as []
@@ -136,8 +141,8 @@ command='terminator'
 name='term'
 
 [org/gnome/shell]
-disabled-extensions=['ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com']
-enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'compiz-windows-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com']
+disabled-extensions=['ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com', 'text-extractor@aditya190803']
+enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'compiz-windows-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com', 'textgrabber@pierrethibault.dev']
 favorite-apps=['org.gnome.Nautilus.desktop', 'terminator.desktop', 'zen.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.0'
@@ -203,3 +208,17 @@ locations=@av []
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=true
 sort-directories-first=true
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=172
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(23, 21)
+window-size=(1203, 902)

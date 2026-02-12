@@ -7,3 +7,4 @@ ding@rastersoft.com
 snapd-prompting@canonical.com
 ubuntu-appindicators@ubuntu.com
 desktop-cube@schneegans.github.com
+textgrabber@pierrethibault.dev
