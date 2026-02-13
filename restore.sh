@@ -51,8 +51,8 @@ fi
 sleep 2
 
 echo "Setting wallpaper..."
-WALLPAPER_SOURCE="$DOTFILES_DIR/wallpapers/berserk-red.jpg"
-WALLPAPER_DEST="$HOME/Pictures/berserk-red.jpg"
+WALLPAPER_SOURCE="$DOTFILES_DIR/wallpapers/berserk-black.jpg"
+WALLPAPER_DEST="$HOME/Pictures/berserk-black.jpg"
 
 if [ -f "$WALLPAPER_SOURCE" ]; then
     mkdir -p "$HOME/Pictures"

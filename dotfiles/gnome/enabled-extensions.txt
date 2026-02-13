@@ -5,7 +5,6 @@ gsconnect@andyholmes.github.io
 dash-to-dock@micxgx.gmail.com
 desktop-cube@schneegans.github.com
 blur-my-shell@aunetx
-clipboard-history@alexsaveau.dev
 boostvolume@shaquib.dev
 textgrabber@pierrethibault.dev
 clipboard-indicator@tudmotu.com
