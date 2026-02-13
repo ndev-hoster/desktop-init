@@ -19,20 +19,19 @@ mkdir -p "$HOME/.themes"
 mkdir -p "$HOME/.icons"
 mkdir -p "$HOME/.local/share/gnome-shell/extensions"
 
-# Themes
-if [ -d "$THEMES_DIR/.themes" ]; then
-    cp -r "$THEMES_DIR/.themes/"* "$HOME/.themes/"
+# Themes - extract from tar
+if [ -f "$THEMES_DIR/themes.tar" ]; then
+    tar -xzf "$THEMES_DIR/themes.tar" -C "$HOME"
 fi
 
-# Icons
-if [ -d "$THEMES_DIR/.icons" ]; then
-    cp -r "$THEMES_DIR/.icons/"* "$HOME/.icons/"
+# Icons - extract from tar
+if [ -f "$THEMES_DIR/icons.tar" ]; then
+    tar -xzf "$THEMES_DIR/icons.tar" -C "$HOME"
 fi
 
 echo "Restoring extensions..."
-if [ -d "$GNOME_DIR/extensions" ]; then
-    cp -r "$GNOME_DIR/extensions/"* \
-        "$HOME/.local/share/gnome-shell/extensions/"
+if [ -f "$GNOME_DIR/extensions.tar" ]; then
+    tar -xzf "$GNOME_DIR/extensions.tar" -C "$HOME/.local/share/gnome-shell"
 fi
 
 echo "Restoring GNOME settings..."
@@ -42,7 +41,6 @@ echo "Re-enabling extensions..."
 while read -r ext; do
     [ -n "$ext" ] && gnome-extensions enable "$ext" 2>/dev/null || true
 done < "$GNOME_DIR/enabled-extensions.txt"
-
 
 echo "Restarting GNOME Shell..."
 if command -v busctl >/dev/null 2>&1; then
@@ -60,14 +58,13 @@ if [ -f "$WALLPAPER_SOURCE" ]; then
     mkdir -p "$HOME/Pictures"
     cp "$WALLPAPER_SOURCE" "$WALLPAPER_DEST"
 
-    # Use dconf directly instead of gsettings
     dconf write /org/gnome/desktop/background/picture-uri "'file://${WALLPAPER_DEST}'"
     
-    # Check if the dark variant key exists in dconf
     if dconf list /org/gnome/desktop/background/ | grep -q "picture-uri-dark"; then
         dconf write /org/gnome/desktop/background/picture-uri-dark "'file://${WALLPAPER_DEST}'"
     fi
 else
     echo "Warning: Wallpaper not found at $WALLPAPER_SOURCE"
 fi
+
 echo "Restore complete. Log out and back in if needed."

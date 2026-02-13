@@ -5,29 +5,17 @@ shopt -s nullglob
 PARENT_DIR="dotfiles"
 
 echo "Creating backup directories..."
-mkdir -p "$PARENT_DIR/gnome/extensions"
-mkdir -p "$PARENT_DIR/themes/.themes"
-mkdir -p "$PARENT_DIR/themes/.icons"
-
-ICONS_DIR="$PARENT_DIR/themes/.icons"
-THEMES_DIR="$PARENT_DIR/themes/.themes"
+mkdir -p "$PARENT_DIR/gnome"
+mkdir -p "$PARENT_DIR/themes"
 
 echo "Backing up user themes..."
-if [ -d "$HOME/.themes" ]; then
-    cp -a "$HOME/.themes/"* "$THEMES_DIR"
-fi
-
-if [ -d "$HOME/.local/share/themes" ]; then
-    cp -a "$HOME/.local/share/themes/"* "$THEMES_DIR"
+if [ -d "$HOME/.themes" ] && [ -n "$(ls -A "$HOME/.themes" 2>/dev/null)" ]; then
+    tar -czf "$PARENT_DIR/themes/themes.tar.gz" -C "$HOME" .themes
 fi
 
 echo "Backing up user icons & cursors..."
-if [ -d "$HOME/.icons" ]; then
-    cp -a "$HOME/.icons/"* "$ICONS_DIR"
-fi
-
-if [ -d "$HOME/.local/share/icons" ]; then
-    cp -a "$HOME/.local/share/icons/"* "$ICONS_DIR"
+if [ -d "$HOME/.icons" ] && [ -n "$(ls -A "$HOME/.icons" 2>/dev/null)" ]; then
+    tar -czf "$PARENT_DIR/themes/icons.tar.gz" -C "$HOME" .icons
 fi
 
 echo "Backing up GNOME settings..."
@@ -37,8 +25,8 @@ echo "Backing up enabled extensions list..."
 gnome-extensions list --enabled > "$PARENT_DIR/gnome/enabled-extensions.txt"
 
 echo "Backing up user-installed extensions..."
-if [ -d "$HOME/.local/share/gnome-shell/extensions" ]; then
-    cp -a "$HOME/.local/share/gnome-shell/extensions/"* "$PARENT_DIR/gnome/extensions/"
+if [ -d "$HOME/.local/share/gnome-shell/extensions" ] && [ -n "$(ls -A "$HOME/.local/share/gnome-shell/extensions" 2>/dev/null)" ]; then
+    tar -czf "$PARENT_DIR/gnome/extensions.tar.gz" -C "$HOME/.local/share/gnome-shell" extensions
 fi
 
 echo "Backup complete."
