@@ -3,8 +3,15 @@ first-run=false
 launch-count=1
 launch-time=int64 1770220190
 
+[com/mattjakeman/ExtensionManager]
+is-maximized=false
+
 [com/ubuntu/update-notifier]
 release-check-time=uint32 1770217093
+
+[org/gnome/Console]
+last-window-maximised=false
+last-window-size=(1128, 544)
 
 [org/gnome/Ptyxis]
 default-profile-uuid='20fad22206274e0982abd26d696a8610'
@@ -14,9 +21,25 @@ window-size=(uint32 80, uint32 24)
 [org/gnome/Ptyxis/Profiles/20fad22206274e0982abd26d696a8610]
 palette='xterm'
 
+[org/gnome/Showtime/State]
+is-maximized=false
+
 [org/gnome/Totem]
 active-plugins=['movie-properties', 'variable-rate', 'rotation', 'screenshot', 'recent', 'open-directory', 'skipto', 'mpris', 'save-file', 'autoload-subtitles', 'screensaver']
 subtitle-encoding='UTF-8'
+
+[org/gnome/baobab/ui]
+is-maximized=false
+window-size=(960, 600)
+
+[org/gnome/calculator]
+base=10
+button-mode='advanced'
+source-units=['degree']
+target-units=['radian']
+unit-category='angle'
+window-maximized=false
+window-size=(700, 616)
 
 [org/gnome/control-center]
 last-panel='bluetooth'
@@ -60,9 +83,12 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/background]
+color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nmn/.config/background'
-picture-uri-dark='file:///home/nmn/.config/background'
+picture-uri='file:///home/nmn/Pictures/choso.jpg'
+picture-uri-dark='file:///home/nmn/Pictures/choso.jpg'
+primary-color='#51a2da'
+secondary-color='#294172'
 
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'us')]
@@ -71,16 +97,35 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 accent-color='blue'
 color-scheme='prefer-dark'
+cursor-blink=true
+cursor-blink-time=1200
+cursor-size=0
 cursor-theme='bibata-modern-ice'
+font-name='Sans 10'
+gtk-key-theme=''
 gtk-theme='Flat-Remix-GTK-Blue-Darkest'
 icon-theme='Papirus'
+show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['update-manager', 'zen', 'gnome-power-panel', 'obsidian', 'intellij-idea-community-intellij-idea-community', 'google-chrome', 'com-mattjakeman-extensionmanager']
+show-banners=false
+
+[org/gnome/desktop/notifications/application/antigravity]
+application-id='antigravity.desktop'
+
+[org/gnome/desktop/notifications/application/arattai]
+application-id='arattai.desktop'
+
+[org/gnome/desktop/notifications/application/chromium]
+application-id='chromium.desktop'
 
 [org/gnome/desktop/notifications/application/com-mattjakeman-extensionmanager]
 application-id='com.mattjakeman.ExtensionManager.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-about-panel]
+application-id='gnome-about-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -94,17 +139,118 @@ application-id='intellij-idea-community_intellij-idea-community.desktop'
 [org/gnome/desktop/notifications/application/obsidian]
 application-id='obsidian.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-calculator]
+application-id='org.gnome.Calculator.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect]
+application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions]
+application-id='org.gnome.Shell.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
+application-id='org.manjaro.pamac.manager.desktop'
+
+[org/gnome/desktop/notifications/application/org-telegram-desktop]
+application-id='org.telegram.desktop.desktop'
+
+[org/gnome/desktop/notifications/application/readest]
+application-id='Readest.desktop'
+
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
 
 [org/gnome/desktop/notifications/application/zen]
 application-id='zen.desktop'
 
+[org/gnome/desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/MacTahoe/MacTahoe-day.jpeg'
+primary-color='#51a2da'
+secondary-color='#294172'
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+event-sounds=false
+input-feedback-sounds=false
+theme-name='default'
+
 [org/gnome/desktop/wm/keybindings]
 close=['<Control>q']
+maximize=@as []
+switch-to-workspace-down=@as []
+switch-to-workspace-up=@as []
+unmaximize=@as []
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='lower'
+button-layout='icon,menu:minimize,maximize,close'
 
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=268
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=818
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+height=1356
+maximized=false
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+width=1280
+
+[org/gnome/gitlab/cheywood/Iotas]
+editor-formatting-bar-visibility='auto-hide'
+first-start=false
+last-launched-version='0.12.1'
+nextcloud-prune-threshold=0
+window-size=[1000, 700]
+
+[org/gnome/mutter]
+edge-tiling=false
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -113,6 +259,32 @@ migrated-gtk-settings=true
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
+maximized=true
+
+[org/gnome/papers]
+night-mode=false
+
+[org/gnome/papers/default]
+annot-color='yellow'
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+show-sidebar=true
+sizing-mode='automatic'
+window-height=1036
+
+[org/gnome/portal/filechooser/antigravity]
+last-folder-path='/home/kratoes/temp/hw-blinkit'
+
+[org/gnome/portal/filechooser/balena-etcher]
+last-folder-path='/home/kratoes/Downloads'
+
+[org/gnome/portal/filechooser/koodo-reader]
+last-folder-path='/mnt/library/Courses'
+
+[org/gnome/portal/filechooser/obsidian]
+last-folder-path='/mnt/library/kepano-obsidian-main'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
 last-folder-path='/home/nmn/temp/kepano-obsidian'
@@ -120,14 +292,25 @@ last-folder-path='/home/nmn/temp/kepano-obsidian'
 [org/gnome/portal/filechooser/snap.codium]
 last-folder-path='/home/nmn/git/desktop-init'
 
+[org/gnome/portal/filechooser/steam]
+last-folder-path='/run/media/kratoes/New Volume/Gaming/Games'
+
+[org/gnome/portal/filechooser/vscodium-git]
+last-folder-path='/home/kratoes/learn-ai/git/learn-ai/notebooks/basics'
+
 [org/gnome/settings-daemon/peripherals/touchscreen]
 orientation-lock=false
 
 [org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
 night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/housekeeping]
+donation-reminder-last-shown=int64 1759956898943627
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+screensaver=['<Super>l']
 terminal=@as []
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -140,10 +323,17 @@ binding='<Control><Alt>t'
 command='terminator'
 name='term'
 
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+sleep-inactive-ac-type='nothing'
+
 [org/gnome/shell]
-disabled-extensions=['ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com', 'text-extractor@aditya190803']
-enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'compiz-windows-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com', 'textgrabber@pierrethibault.dev']
-favorite-apps=['org.gnome.Nautilus.desktop', 'terminator.desktop', 'zen.desktop']
+app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'snap-store_snap-store.desktop': <{'position': <1>}>, 'simple-scan.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'firefox_firefox.desktop': <{'position': <4>}>, 'firmware-updater_firmware-updater.desktop': <{'position': <5>}>, 'google-chrome.desktop': <{'position': <6>}>, 'display-im7.q16.desktop': <{'position': <7>}>, 'org.gnome.Snapshot.desktop': <{'position': <8>}>, 'intellij-idea-community_intellij-idea-community.desktop': <{'position': <9>}>, 'org.gnome.Characters.desktop': <{'position': <10>}>, 'Utilities': <{'position': <11>}>, 'gnome-language-selector.desktop': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Yelp.desktop': <{'position': <14>}>}, {'org.gnome.seahorse.Application.desktop': <{'position': <0>}>, 'org.gnome.PowerStats.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.remmina.Remmina.desktop': <{'position': <4>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <5>}>, 'desktop-security-center_desktop-security-center.desktop': <{'position': <6>}>, 'org.gnome.Shotwell.desktop': <{'position': <7>}>, 'software-properties-gtk.desktop': <{'position': <8>}>, 'update-manager.desktop': <{'position': <9>}>, 'usb-creator-gtk.desktop': <{'position': <10>}>, 'org.gnome.Ptyxis.desktop': <{'position': <11>}>, 'info.desktop': <{'position': <12>}>, 'thunderbird_thunderbird.desktop': <{'position': <13>}>, 'timeshift-gtk.desktop': <{'position': <14>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <15>}>, 'obsidian.desktop': <{'position': <16>}>, 'transmission-gtk.desktop': <{'position': <17>}>, 'org.gnome.Settings.desktop': <{'position': <18>}>, 'org.gnome.Totem.desktop': <{'position': <19>}>}, {'codium_codium.desktop': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-calc.desktop': <{'position': <2>}>, 'libreoffice-draw.desktop': <{'position': <3>}>, 'libreoffice-impress.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>}, {'org.gnome.TextEditor.desktop': <{'position': <0>}>}]
+command-history=['r']
+disable-user-extensions=false
+disabled-extensions=['ubuntu-dock@ubuntu.com', 'text-extractor@aditya190803']
+enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'compiz-windows-effect@hermes83.github.com', 'desktop-cube@schneegans.github.com', 'textgrabber@pierrethibault.dev', 'snapd-prompting@canonical.com', 'ubuntu-appindicators@ubuntu.com', 'boostvolume@shaquib.dev', 'tiling-assistant@ubuntu.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'terminator.desktop', 'zen.desktop', 'org.gnome.Settings.desktop', 'codium_codium.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.0'
 
@@ -154,16 +344,48 @@ settings-version=2
 brightness=0.59999999999999998
 sigma=30
 
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
+blur-on-overview=true
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
 [org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
 blur=true
-brightness=0.59999999999999998
+brightness=0.63
+override-background=true
+pipeline='pipeline_default_rounded'
 sigma=30
 static-blur=true
-style-dash-to-dock=0
+style-dash-to-dock=1
+unblur-in-overview=false
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-panel]
+blur-original-panel=false
+
+[org/gnome/shell/extensions/blur-my-shell/hidetopbar]
+compatibility=false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/blur-my-shell/panel]
+blur=true
 brightness=0.59999999999999998
+override-background=true
+override-background-dynamically=false
+pipeline='pipeline_default_rounded'
 sigma=30
+static-blur=true
+style-panel=0
+unblur-in-overview=false
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/blur-my-shell/window-list]
 brightness=0.59999999999999998
@@ -174,27 +396,99 @@ last-version=29
 preset='R'
 
 [org/gnome/shell/extensions/dash-to-dock]
-apply-custom-theme=true
-background-opacity=0.80000000000000004
+apply-custom-theme=false
+background-color='rgb(0,0,0)'
+background-opacity=0.48999999999999999
+custom-background-color=true
+custom-theme-shrink=false
 dash-max-icon-size=48
 disable-overview-on-startup=true
 dock-fixed=false
 dock-position='BOTTOM'
+extend-height=false
 height-fraction=0.90000000000000002
+intellihide=false
 intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+multi-monitor=true
 preferred-monitor=-2
 preferred-monitor-by-connector='eDP-1'
+preview-size-scale=0.0
 require-pressure-to-show=false
+running-indicator-style='DOTS'
+show-mounts=false
 show-mounts-network=true
 show-mounts-only-mounted=false
 show-show-apps-button=false
+show-trash=false
+transparency-mode='DYNAMIC'
 
 [org/gnome/shell/extensions/ding]
 check-x11wayland=true
 
+[org/gnome/shell/extensions/gsconnect]
+devices=['f99551564fe742af8aceaafb09bd334b']
+missing-openssl=false
+name='kompyuter'
+
+[org/gnome/shell/extensions/gsconnect/device/f99551564fe742af8aceaafb09bd334b]
+certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBjDCCATGgAwIBAgIBATAKBggqhkjOPQQDBDBPMSkwJwYDVQQDDCBmOTk1NTE1\nNjRmZTc0MmFmOGFjZWFhZmIwOWJkMzM0YjEUMBIGA1UECwwLS0RFIENvbm5lY3Qx\nDDAKBgNVBAoMA0tERTAeFw0yNDEyMjMxODMwMDBaFw0zNTEyMjMxODMwMDBaME8x\nKTAnBgNVBAMMIGY5OTU1MTU2NGZlNzQyYWY4YWNlYWFmYjA5YmQzMzRiMRQwEgYD\nVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RFMFkwEwYHKoZIzj0CAQYIKoZI\nzj0DAQcDQgAEhrcr5vaB3+ni2Hj1so8EbOrgg1J+Au5kUr0A3aE+Qr5y+/l+d12k\nY80bPf4ENusBA4AlHGzFQ0vQIu3hZj6oQzAKBggqhkjOPQQDBANJADBGAiEA7g77\n8xkyo0RUuz1dz6LLLixmMR+jKnOjX/yi/vyHm64CIQCa42xxXVD4NW0Van/RPbIl\nmOzsHwkisbikuI7QjlbB+A==\n-----END CERTIFICATE-----\n'
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request_mute']
+last-connection='lan://192.168.0.9:1716'
+name='Galaxy Tab S8'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.digitizer', 'kdeconnect.digitizer.session', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+paired=true
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='tablet'
+
+[org/gnome/shell/extensions/gsconnect/device/f99551564fe742af8aceaafb09bd334b/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[org/gnome/shell/extensions/gsconnect/device/f99551564fe742af8aceaafb09bd334b/plugin/clipboard]
+receive-content=true
+
+[org/gnome/shell/extensions/gsconnect/device/f99551564fe742af8aceaafb09bd334b/plugin/notification]
+applications='{"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Ghostty":{"iconName":"com.mitchellh.ghostty","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"NetworkManager Applet":{"iconName":"nm-device-wireless","enabled":true},"Add/Remove Software":{"iconName":"system-software-install","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true},"Telegram":{"iconName":"org.telegram.desktop","enabled":true},"Geary":{"iconName":"org.gnome.Geary","enabled":true},"Bottles":{"iconName":"com.usebottles.bottles","enabled":true}}'
+
+[org/gnome/shell/extensions/gsconnect/device/f99551564fe742af8aceaafb09bd334b/plugin/share]
+receive-directory='/home/kratoes/Downloads'
+
+[org/gnome/shell/extensions/gsconnect/messaging]
+window-maximized=false
+window-size=(640, 480)
+
+[org/gnome/shell/extensions/gsconnect/preferences]
+window-maximized=false
+window-size=(721, 550)
+
+[org/gnome/shell/extensions/rounded-window-corners-reborn]
+border-width=1
+settings-version=uint32 7
+
+[org/gnome/shell/extensions/system-monitor]
+show-upload=false
+
+[org/gnome/shell/extensions/text-extractor]
+save-screenshots=false
+
+[org/gnome/shell/extensions/textgrabber]
+tesseract-languages=['eng']
+textgrabber-shortcut=['<Shift><Super>t']
+
 [org/gnome/shell/extensions/tiling-assistant]
 focus-hint-color='rgb(203,67,20)'
 last-version-installed=53
+overridden-settings={'org.gnome.mutter.edge-tiling': <true>, 'org.gnome.desktop.wm.keybindings.maximize': <['<Super>Up']>, 'org.gnome.desktop.wm.keybindings.unmaximize': <['<Super>Down', '<Alt>F5']>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <['<Super>Left']>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <['<Super>Right']>}
+
+[org/gnome/shell/extensions/tilingshell]
+cycle-layouts-backward=['<Shift>']
+enable-blur-snap-assistant=true
+inner-gaps=uint32 0
+last-version-name-installed='17.2'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.513671875,"height":0.505730659025788,"groups":[1,3]},{"x":0.513671875,"y":0,"width":0.486328125,"height":0.5035816618911175,"groups":[2,1]},{"x":0.513671875,"y":0.5035816618911175,"width":0.486328125,"height":0.4964183381088825,"groups":[2,1]},{"x":0,"y":0.505730659025788,"width":0.513671875,"height":0.49426934097421205,"groups":[3,1]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]},{"id":"265824","tiles":[{"x":0,"y":0,"width":0.3,"height":0.4992836676217765,"groups":[1,4]},{"x":0.3,"y":0,"width":0.39101562500000003,"height":1,"groups":[2,1]},{"x":0.691015625,"y":0,"width":0.3089843749999999,"height":0.5007163323782235,"groups":[3,2]},{"x":0.691015625,"y":0.5007163323782235,"width":0.3089843749999999,"height":0.49928366762177645,"groups":[3,2]},{"x":0,"y":0.4992836676217765,"width":0.3,"height":0.5007163323782235,"groups":[4,1]}]}]'
+outer-gaps=uint32 0
+overridden-settings='{}'
+selected-layouts=[['Layout 2'], ['Layout 2']]
+window-use-custom-border-color=false
 
 [org/gnome/shell/extensions/user-theme]
 name='Orchis-Dark'
@@ -205,9 +499,24 @@ show-screenshot-ui=['<Shift><Super>s']
 [org/gnome/shell/world-clocks]
 locations=@av []
 
+[org/gnome/software]
+check-timestamp=int64 1770265114
+first-run=false
+flatpak-purge-timestamp=int64 1770857922
+update-notification-timestamp=int64 1770265114
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=true
 sort-directories-first=true
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -222,3 +531,13 @@ sort-order='ascending'
 type-format='category'
 window-position=(23, 21)
 window-size=(1203, 902)
+
+[org/notes]
+mode=1
+notebook-panel-size=150
+notes-database='/home/kratoes/.local/share/notes-up/NotesUp.db'
+panel-size=200
+pos-x=24
+pos-y=21
+recent-files=['/home/kratoes/.local/share/notes-up/NotesUp.db']
+style-scheme='high-contrast'

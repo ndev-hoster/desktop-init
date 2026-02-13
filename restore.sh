@@ -43,19 +43,6 @@ while read -r ext; do
     [ -n "$ext" ] && gnome-extensions enable "$ext" 2>/dev/null || true
 done < "$GNOME_DIR/enabled-extensions.txt"
 
-echo "Setting wallpaper..."
-
-WALLPAPER_SOURCE="$DOTFILES_DIR/luffy-gear-five.jpg"
-WALLPAPER_DEST="$HOME/Pictures/luffy-gear-five.jpg"
-
-if [ -f "$WALLPAPER_SOURCE" ]; then
-    mkdir -p "$HOME/Pictures"
-    cp "$WALLPAPER_SOURCE" "$WALLPAPER_DEST"
-
-    gsettings set org.gnome.desktop.background picture-uri "file://$WALLPAPER_DEST"
-    gsettings set org.gnome.desktop.background picture-uri-dark "file://$WALLPAPER_DEST"
-fi
-
 
 echo "Restarting GNOME Shell..."
 if command -v busctl >/dev/null 2>&1; then
@@ -63,4 +50,24 @@ if command -v busctl >/dev/null 2>&1; then
         org.gnome.Shell Eval s 'Meta.restart("restore");'
 fi
 
+sleep 2
+
+echo "Setting wallpaper..."
+WALLPAPER_SOURCE="$DOTFILES_DIR/wallpapers/berserk-red.jpg"
+WALLPAPER_DEST="$HOME/Pictures/berserk-red.jpg"
+
+if [ -f "$WALLPAPER_SOURCE" ]; then
+    mkdir -p "$HOME/Pictures"
+    cp "$WALLPAPER_SOURCE" "$WALLPAPER_DEST"
+
+    # Use dconf directly instead of gsettings
+    dconf write /org/gnome/desktop/background/picture-uri "'file://${WALLPAPER_DEST}'"
+    
+    # Check if the dark variant key exists in dconf
+    if dconf list /org/gnome/desktop/background/ | grep -q "picture-uri-dark"; then
+        dconf write /org/gnome/desktop/background/picture-uri-dark "'file://${WALLPAPER_DEST}'"
+    fi
+else
+    echo "Warning: Wallpaper not found at $WALLPAPER_SOURCE"
+fi
 echo "Restore complete. Log out and back in if needed."
