@@ -42,7 +42,7 @@ window-maximized=false
 window-size=(700, 616)
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='display'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -85,8 +85,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nmn/Pictures/choso.jpg'
-picture-uri-dark='file:///home/nmn/Pictures/choso.jpg'
+picture-uri='file:///home/nmn/Pictures/berserk-red.jpg'
+picture-uri-dark='file:///home/nmn/Pictures/berserk-red.jpg'
 primary-color='#51a2da'
 secondary-color='#294172'
 
