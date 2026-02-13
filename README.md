@@ -9,7 +9,7 @@ command -v gnome-extensions
 ## Restoring on a New Machine
 1. install tesseract-ocr package
 ```sh
-sudo apt install tesseract-ocr
+sudo pacman -S tesseract-ocr
 ```
 
 2. Just run these
